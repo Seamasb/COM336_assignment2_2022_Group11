@@ -1,0 +1,14 @@
+
+SELECT * FROM `orderstatus`
+
+SELECT cartid FROM cart_item WHERE cartid=2994;
+
+
+SELECT `Order No`
+FROM ordertable
+WHERE `Order No` BETWEEN 2 AND 5;
+
+
+SELECT `book id` FROM `order items`
+UNION 
+SELECT `status` FROM orderstatus;
