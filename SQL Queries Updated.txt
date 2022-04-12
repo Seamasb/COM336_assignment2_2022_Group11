@@ -1,0 +1,19 @@
+
+SELECT * FROM book.orderstatus WHERE `status` LIKE 'Completed';
+ // Returns all orders that have a status as completed
+
+UPDATE book.orderstatus
+SET `status` = 'Completed'
+WHERE `Order No` = 1; //Updates order status of order number 1 to processing
+
+
+SELECT cartid FROM cart_item WHERE cartid=2994; //Returns details about the Cart ID 2994 from the cart_item table.
+
+DELETE FROM book.cart_item WHERE `Book id`=8;// Removes book id from active carts. Use if out of stock etc.
+
+
+SELECT `Order No`
+FROM ordertable
+WHERE `Order No` BETWEEN 2 AND 5; // Returns Order numbers between range of 2 and 5
+
+
